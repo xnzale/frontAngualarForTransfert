@@ -1,0 +1,64 @@
+<div class="row pt-5">
+    <div class="col-md-6 mx-auto">
+        <div class="card rounded-0">
+            <div class="card-header">
+                <h1 class="mb-0">Register</h1>
+            </div>
+            <div class="card-body">
+                <form class="form">
+                        <div class="form-group">
+                                <label for="">Entreprise :</label>
+                                <input type="text"  class="form-control-rounded-0" required >
+                            </div>
+                    <div class="form-group">
+                        <label for="">Username : </label>
+                        <input type="text" class="form-control-rounded-0" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Rôle : </label>
+                        <input type="text" class="form-control-rounded-0" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Passwords : </label>
+                        <input type="password" [(ngModel)]="registerUserData.password" name="password" class="form-control-rounded-0" minlength="8" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nom : </label>
+                        <input type="text" class="form-control-rounded-0" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email : </label>
+                        <input type="email" id="email" [(ngModel)]="registerUserData.email" name="email" class="form-control-rounded-0" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Telephone : </label>
+                        <input type="tel" id="phone" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required>
+                 
+                 <small>Format: XX-XXX-XX-XX</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="">NCI : </label>
+                        <input type="password" class="form-control-rounded-0" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email : </label>
+                        <input type="text" class="form-control-rounded-0" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Status : </label>
+                        <input type="text" class="form-control-rounded-0" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Image : </label>
+                        <input type="image" id="image" alt="Login" class="form-control-rounded-0" required>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 (click)="registerUser()" rounded-0">
+                        enregistrer
+                      </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
